@@ -11,7 +11,7 @@ export default function ColorPicker() {
         <input 
           type="color" 
           value={color} 
-          onChange={(e) => setColor(e.target.value)} 
+          onChange={(e: any) => setColor(e.target.value)} 
           style={{ marginLeft: '0.5rem' }} 
         />
       </label>
