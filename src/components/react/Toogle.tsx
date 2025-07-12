@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Color from "./Color"
 export default function ToggleBox() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -10,11 +10,13 @@ export default function ToggleBox() {
         style={{ padding: '0.5rem 1rem', cursor: 'pointer' }}
       >
         {isVisible ? 'Hide' : 'Show'} content
+        
       </button>
 
       {isVisible && (
         <div style={{ marginTop: '1rem', padding: '1rem', border: '1px solid #ccc' }}>
           <p>This is the content you can toggle!</p>
+          <Color />
         </div>
       )}
     </div>
